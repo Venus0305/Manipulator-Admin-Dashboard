@@ -1,0 +1,55 @@
+.input-container.text-field-container {
+  width: 100%;
+  .ant-row {
+    display: unset;
+  }
+  .ant-form-item-has-error {
+    .ant-form-item-control {
+      .ant-form-item-explain {
+        .helper-wrapper {
+          .max-length-text {
+            color: @error;
+          }
+        }
+      }
+    }
+  }
+  .ant-input-suffix,
+  .ant-input-prefix {
+    img {
+      width: 14px;
+      height: 14px;
+    }
+  }
+  .ant-form-item-label {
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 1.5;
+  }
+  .ant-form-item-explain {
+    .helper-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 1.38;
+      .error-text {
+        display: flex;
+        align-items: center;
+        .info-icon {
+          margin-right: 4px;
+        }
+      }
+      .max-length-text {
+        color: @charcoalGrey;
+      }
+    }
+  }
+  .label-wrapper {
+    display: flex;
+    .required-mark {
+      color: @primaryFocus;
+    }
+  }
+}

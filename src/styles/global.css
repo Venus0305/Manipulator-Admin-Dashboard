@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box; 
+  -moz-box-sizing: border-box; 
+  box-sizing: border-box;
+}
+
+.pointer, a {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  margin: 0px;
+}
+li.ant-menu-item.ant-menu-item-only-child.ant-pro-base-menu-menu-item:not(.ant-menu-item-selected):not(:active):hover {
+  color: #fff;
+}
+
+@layer components {
+  .page-title {
+    @apply p-6  text-lg bg-white
+  }
+}
+
+.ant-pro-layout .ant-pro-sider .ant-layout-sider-children {
+  padding-top: 12px;
+}
+
+.ant-table-wrapper .ant-table-tbody >tr >td {
+  word-break: break-all;
+  white-space: pre-line;
+}
+
+.ant-tabs.ant-tabs-top.ant-pro-page-container-tabs .ant-tabs-nav {
+  margin-bottom: 0
+}
+
+.ant-page-header .ant-tabs-nav{
+  margin-bottom:0
+}
+
+.ant-page-header .ant-page-header-back {
+  margin-inline-end: 10px;
+  margin-inline-start: 16px;
+  margin-top: 4px;
+}
+
+.page-header-container.ant-row{
+  margin-left:0px !important;
+  margin-right:0px !important;
+}
+
+.ant-checkbox-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.ant-checkbox-group-item{
+  margin-inline-start:0px !important;
+}
+
+.date-picker-view-mode-wrapper {
+  margin-top: 10px;
+}

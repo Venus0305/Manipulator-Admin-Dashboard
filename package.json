@@ -1,0 +1,148 @@
+{
+  "name": "lawyer-dashboard",
+  "version": "0.0.3",
+  "private": true,
+  "dependencies": {
+    "@ant-design/icons": "^5.0.1",
+    "@ant-design/pro-card": "^2.3.2",
+    "@ant-design/pro-layout": "^7.10.2",
+    "@ant-design/pro-table": "^3.5.2",
+    "@auth0/auth0-react": "^2.0.1",
+    "@hookform/resolvers": "^2.9.11",
+    "@tanstack/react-query": "^4.27.0",
+    "@tanstack/react-query-devtools": "^4.27.0",
+    "@tiptap/extension-color": "^2.0.0-beta.220",
+    "@tiptap/extension-image": "^2.0.0-beta.220",
+    "@tiptap/extension-link": "^2.0.0-beta.220",
+    "@tiptap/extension-text-align": "^2.0.0-beta.220",
+    "@tiptap/extension-text-style": "^2.0.0-beta.220",
+    "@tiptap/pm": "^2.0.0-beta.220",
+    "@tiptap/react": "^2.0.0-beta.220",
+    "@tiptap/starter-kit": "^2.0.0-beta.220",
+    "@types/google-map-react": "^2.1.7",
+    "antd": "^5.3.1",
+    "axios": "^1.3.4",
+    "cookies-next": "^2.1.1",
+    "dayjs": "^1.11.7",
+    "i18n-js": "^4.2.3",
+    "i18next": "^22.4.12",
+    "i18next-browser-languagedetector": "^7.0.1",
+    "lodash": "^4.17.21",
+    "moment": "^2.29.4",
+    "prettier": "^2.8.4",
+    "query-string": "^8.1.0",
+    "react": "^18.2.0",
+    "react-cookie": "^4.1.1",
+    "react-dom": "^18.2.0",
+    "react-hook-form": "^7.43.7",
+    "react-i18next": "12.2.0",
+    "react-number-format": "^5.1.4",
+    "react-router": "^6.9.0",
+    "react-router-dom": "^6.9.0",
+    "recharts": "^2.5.0",
+    "typescript": "^5.0.2",
+    "vite-plugin-imp": "^2.3.1",
+    "vite-plugin-svgr": "^2.4.0",
+    "web-vitals": "^3.3.0",
+    "yup": "^1.0.2",
+    "zustand": "^4.3.6"
+  },
+  "scripts": {
+    "start": "vite",
+    "build": "tsc && vite build",
+    "serve": "vite preview",
+    "eject": "react-scripts eject",
+    "lint": "eslint ./src --ext .js,.jsx,.ts,.tsx",
+    "lint:fix": "eslint ./src --fix --ext .js,.jsx,.ts,.tsx",
+    "version": "auto-changelog && git add CHANGELOG.md",
+    "postversion": "git push --atomic origin $(git rev-parse --abbrev-ref HEAD) $(git describe --abbrev=0)",
+    "plop": "plop --plopfile plop/plopfile.js",
+    "build:prod": "vite build",
+    "prepare": "husky install"
+  },
+  "lint-staged": {
+    "*.{js,jsx,.ts,.tsx}": [
+      "npm run lint"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "pre-commit": "lint-staged"
+    }
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.4.4",
+    "@commitlint/config-conventional": "^17.4.4",
+    "@types/lodash": "^4.14.191",
+    "@types/react": "^18.0.28",
+    "@types/react-dom": "^18.0.11",
+    "@types/react-input-mask": "^3.0.2",
+    "@types/react-router-dom": "^5.3.3",
+    "@types/react-show-more-text": "^1.4.2",
+    "@typescript-eslint/eslint-plugin": "^5.55.0",
+    "@typescript-eslint/parser": "^5.55.0",
+    "@vitejs/plugin-react": "^3.1.0",
+    "autoprefixer": "^10.4.14",
+    "eslint": "8.36.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-airbnb-typescript": "^17.0.0",
+    "eslint-config-prettier": "^8.7.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-simple-import-sort": "^10.0.0",
+    "eslint-plugin-unused-imports": "^2.0.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.0",
+    "postcss": "^8.4.21",
+    "prettier": "^2.8.4",
+    "tailwindcss": "^3.2.7",
+    "typescript": "^5.0.2",
+    "vite": "^4.2.0",
+    "vite-plugin-imp": "^2.3.1",
+    "vite-tsconfig-paths": "^4.0.7"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "auto-changelog": {
+    "hideCredit": true,
+    "output": "CHANGELOG.md",
+    "package": true,
+    "template": "changelog-template.hbs",
+    "handlebarsSetup": "changelog-custom-hbs.js",
+    "commitLimit": false,
+    "unreleased": false,
+    "issueUrl": "https://c2cdoc.atlassian.net/browse/{id}",
+    "replaceText": {
+      "^[Ff]eature\\(+(.+)\\)+:": "**$1**:",
+      "^[Ff]ix\\(+(.+)\\)+:": "**$1**:",
+      "^[Bb]reak\\(+(.+)\\)+:": "**$1**:",
+      "^[Cc]hore\\(+(.+)\\)+:": "**$1**:",
+      "^[Dd]ocs\\(+(.+)\\)+:": "docs **$1**:",
+      "([A-Z]+-\\d{1,5})": "[`$1`](https://c2cdoc.atlassian.net/browse/$1)"
+    },
+    "includeBranch": [
+      "develop",
+      "main"
+    ]
+  }
+}

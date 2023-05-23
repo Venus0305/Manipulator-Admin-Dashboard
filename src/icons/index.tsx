@@ -1,0 +1,15 @@
+export { default as RedoIcon } from './arrow-clockwise.svg';
+export { default as UndoIcon } from './arrow-counterclockwise.svg';
+export { default as FileImageIcon } from './file-image.svg';
+export { default as OrderListIcon } from './list-ol.svg';
+export { default as BulletListIcon } from './list-ul.svg';
+export { default as AlignCenterIcon } from './text-center.svg';
+export { default as AlignLeftIcon } from './text-left.svg';
+export { default as ParagraphIcon } from './text-paragraph.svg';
+export { default as AlignRightIcon } from './text-right.svg';
+export { default as BoldIcon } from './type-bold.svg';
+export { default as H1Icon } from './type-h1.svg';
+export { default as H2Icon } from './type-h2.svg';
+export { default as H3Icon } from './type-h3.svg';
+export { default as ItalicIcon } from './type-italic.svg';
+export { default as StrikethroughIcon } from './type-strikethrough.svg';
